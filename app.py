@@ -90,9 +90,9 @@ if search_btn:
 (同様に2店舗目、3店舗目を出力)
 """
 
-                # Google Search Groundingを有効にして呼び出し
+                # モデル名を gemini-1.5-flash に更新
                 response = client.models.generate_content(
-                    model='gemini-2.5-flash',
+                    model='gemini-1.5-flash',
                     contents=prompt,
                     config=types.GenerateContentConfig(
                         tools=[types.Tool(google_search=types.GoogleSearch())]
