@@ -90,9 +90,9 @@ if search_btn:
 (同様に2店舗目、3店舗目を出力)
 """
 
-                # モデル名を gemini-2.0-flash に更新
+                # モデル名を gemini-3.8-flash に更新
                 response = client.models.generate_content(
-                    model='gemini-2.0-flash',
+                    model='gemini-3.8-flash',
                     contents=prompt,
                     config=types.GenerateContentConfig(
                         tools=[types.Tool(google_search=types.GoogleSearch())]
